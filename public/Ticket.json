@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1001,
+    "title": "Login issue",
+    "description": "Unable to login with correct credentials",
+    "customer": "Alice Johnson",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "01-10-2025"
+  },
+  {
+    "id": 1002,
+    "title": "Payment failed",
+    "description": "Payment is not going through via credit card",
+    "customer": "Bob Smith",
+    "priority": "High",
+    "status": "Pending",
+    "createdAt": "01-10-2025"
+  },
+  {
+    "id": 1003,
+    "title": "Booking confirmation not received",
+    "description": "No email confirmation after booking",
+    "customer": "Charlie Davis",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "01-10-2025"
+  },
+  {
+    "id": 1004,
+    "title": "Unable to select seat",
+    "description": "Seat selection fails during checkout",
+    "customer": "Diana Miller",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "01-10-2025"
+  },
+  {
+    "id": 1005,
+    "title": "Ticket refund request",
+    "description": "Requesting refund for cancelled flight",
+    "customer": "Ethan Brown",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "01-10-2025"
+  },
+  {
+    "id": 1006,
+    "title": "Website not loading",
+    "description": "Website is slow or not loading on mobile",
+    "customer": "Fiona Wilson",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "01-10-2025"
+  },
+  {
+    "id": 1007,
+    "title": "Coupon code not working",
+    "description": "Discount coupon not applied at checkout",
+    "customer": "George Lee",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "01-10-2025"
+  },
+  {
+    "id": 1008,
+    "title": "Account suspended",
+    "description": "Account suspended without reason",
+    "customer": "Hannah Clark",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "01-10-2025"
+  },
+  {
+    "id": 1009,
+    "title": "Mobile app crash",
+    "description": "App crashes when opening bookings",
+    "customer": "Ian Martinez",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "01-10-2025"
+  },
+  {
+    "id": 1010,
+    "title": "Wrong ticket details",
+    "description": "Booking shows wrong date",
+    "customer": "Julia Lopez",
+    "priority": "High",
+    "status": "Pending",
+    "createdAt": "01-10-2025"
+  },
+  {
+    "id": 1011,
+    "title": "Unable to change password",
+    "description": "Password reset link not working",
+    "customer": "Kevin Young",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "01-10-2025"
+  },
+  {
+    "id": 1012,
+    "title": "Multiple bookings error",
+    "description": "Duplicate bookings created accidentally",
+    "customer": "Laura King",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "01-10-2025"
+  },
+  {
+    "id": 1013,
+    "title": "Unable to apply filters",
+    "description": "Search filters not functioning correctly",
+    "customer": "Michael Scott",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "01-10-2025"
+  },
+  {
+    "id": 1014,
+    "title": "Ticket QR code not generated",
+    "description": "No QR code shown for confirmed ticket",
+    "customer": "Nina Patel",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "01-10-2025"
+  },
+  {
+    "id": 1015,
+    "title": "Notification not received",
+    "description": "SMS/email notifications not sent for booking",
+    "customer": "Oscar Gomez",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "01-10-2025"
+  }
+]
