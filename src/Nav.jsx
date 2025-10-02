@@ -26,8 +26,8 @@ const Nav = () => {
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <img className='h-[50px] w-[100px]' src='/ticlogo.png'></img>
-    <a className="btn btn-ghost text-xl  font-bold">CS-Ticket System</a>
+    <img className='h-[30px] w-[90px] ml-[-10px] lg:ml-[10px] lg:h-[50px] lg:w-[100px]' src='/ticlogo.png'></img>
+    <a className="btn btn-ghost text-[13px] font-extrabold ml-[-15px] lg:text-[20px]">CS-Ticket System</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -42,7 +42,7 @@ const Nav = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white">+ New Ticket</a>
+    <a className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white text-[10px] px-[5px] lg:text-[14px] lg:px-[15px]">+ New Ticket</a>
   </div>
 </div>
         </div>
