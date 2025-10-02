@@ -26,7 +26,8 @@ const Nav = () => {
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl  font-bold">CS — Ticket System</a>
+    <img className='h-[50px] w-[100px]' src='/public/ticlogo.png'></img>
+    <a className="btn btn-ghost text-xl  font-bold">CS-Ticket System</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

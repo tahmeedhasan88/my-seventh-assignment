@@ -4,6 +4,7 @@ import './App.css'
 import Banner from './Banner'
 import Hero from './Hero'
 import Nav from './Nav'
+import Footer from './Footer'
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
       <Suspense fallback={<h2>Loading...</h2>}>
         <Hero getData={getData}></Hero>
       </Suspense>
+      <Footer></Footer>
       
     </>
   )
