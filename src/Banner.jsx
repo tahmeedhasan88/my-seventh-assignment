@@ -1,5 +1,5 @@
 import React from 'react';
-import Vector1 from '../public/vector1.png'
+
 
 const Banner = () => {
     return (

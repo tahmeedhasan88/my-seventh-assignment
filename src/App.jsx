@@ -8,7 +8,7 @@ import Footer from './Footer'
 
 function App() {
   
-  const getData= fetch('/public/Ticket.json').then(res=>res.json())
+  const getData= fetch('/Ticket.json').then(res=>res.json())
 
   return (
     <>

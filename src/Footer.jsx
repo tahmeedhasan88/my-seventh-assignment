@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
          <div>
-        <div className='bg-black mt-10 p-20 flex justify-between flex-col gap-10 lg:flex-row'>
+        <div className='bg-black mt-10 p-20 flex justify-between flex-col gap-10 lg:flex-row footer-text'>
             
         <div className='text-white text-start w-[200px]'>
             <h2 className='text-white font-bold'>CS-Ticket System</h2>
