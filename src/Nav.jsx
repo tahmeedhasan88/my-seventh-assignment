@@ -6,7 +6,7 @@ const Nav = () => {
 
         <div className=''>
 
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar bg-white shadow-sm text-black">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -14,23 +14,20 @@ const Nav = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
+        className="menu menu-sm dropdown-content  rounded-box z-1 mt-3 w-52 p-2 shadow bg-black text-white">
+        <li><a>Home</a></li>
+        <li><a>FAQ</a></li>
+        <li><a>Changelog</a></li>
+        <li><a>Blog</a></li>
+        <li><a>Download</a></li>
+        <li><a>Contact</a></li>
       </ul>
     </div>
     <img className='h-[30px] w-[90px] ml-[-10px] lg:ml-[10px] lg:h-[50px] lg:w-[100px]' src='/ticlogo.png'></img>
-    <a className="btn btn-ghost text-[13px] font-extrabold ml-[-15px] lg:text-[20px]">CS-Ticket System</a>
+    <a className="btn btn-ghost text-[13px] font-extrabold ml-[-15px] lg:text-[20px text-black">CS-Ticket System</a>
   </div>
-  <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+  <div className="navbar-center hidden lg:flex text-black">
+    <ul className="menu menu-horizontal px-1 ">
       <li><a>Home</a></li>
       <li>
         <a>FAQ</a>
@@ -42,7 +39,7 @@ const Nav = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white text-[10px] px-[5px] lg:text-[14px] lg:px-[15px]">+ New Ticket</a>
+    <a className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white text-[10px] px-[5px] lg:text-[14px] lg:px-[15px] rounded-[5px]">+ New Ticket</a>
   </div>
 </div>
         </div>

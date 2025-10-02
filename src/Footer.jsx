@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
 
 
-        <div className='text-white p-5 bg-black border-t-1 border-gray-600'><p>© 2025 CS — Ticket System. All rights reserved.</p></div>
+        <div className='text-white p-5 bg-black border-t-1 border-gray-600 text-[13px]'><p>© 2025 CS- Ticket System. All rights reserved.</p></div>
          </div>    
         
     );
