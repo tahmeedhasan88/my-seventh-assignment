@@ -5,6 +5,9 @@ const Hero = ({getData, count, setCount, counter, setCounter}) => {
  
     const weGet = use(getData)
 
+
+   const [solve, setSolve] = useState([])
+
     const [select, setSelect] = useState([])
 
     const handleSelect=(card)=>{
@@ -17,7 +20,13 @@ const Hero = ({getData, count, setCount, counter, setCounter}) => {
     }
 
     const handleClear=(card)=>{
-        setSelect((view)=> view.filter((_, i) => i !==card));
+        setSelect((view)=> {
+            const solveCard= view[card];
+
+            setSolve((complete)=> [...complete, solveCard]);
+            return view.filter((_, i) => i !==card);
+        });
+
         const minCount= count-1;
         setCount(minCount)
 
@@ -81,12 +90,14 @@ const Hero = ({getData, count, setCount, counter, setCounter}) => {
             
            <div className='p-10 shadow'>
             <h2 className='font-bold text-black'>Task Status</h2>
+
             {
               
               select.length>0? (select.map((card, index)=>(<div className='border p-5 rounded-xl mt-4'>
             <h3 className='text-black font-bold text-[20px]'>{card.title}</h3>
             <button onClick={()=>handleClear(index)} className='py-[7px] px-[70px] bg-green-600 mt-2 text-white font-semibold rounded-[5px]'>Completed</button>
            </div>))): (<p>Select a ticket to add to Task Status</p>)
+
             }
 
         
@@ -101,7 +112,27 @@ const Hero = ({getData, count, setCount, counter, setCounter}) => {
 
            <div className='p-10 shadow mt-6'>
             <h2 className='font-bold text-black'>Resolved Task</h2>
-            <p>No resolved tasks yet.</p>
+           
+
+               {/* ---resolved---- */}
+
+            {
+                solve.length>0 ? (
+                     solve.map((title)=>(<div className='font-semibold bg-[#E0E7FF] py-[10px] px-[20px] text-[17px] rounded-[5px] text-black mt-4'><h3>{title.title}</h3></div>)) 
+                ) : ( <p>No resolved tasks yet.</p>)
+            }
+              
+             
+
+
+
+
+
+
+
+
+             
+
            </div>
                
         </div>
