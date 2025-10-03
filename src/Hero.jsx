@@ -1,7 +1,10 @@
 import React, { use } from 'react';
 import Card from './Card';
+import Selectarea from './Selectarea';
+import { useState } from 'react';
 
 const Hero = ({getData}) => {
+
 
     const weGet = use(getData)
     return (
@@ -15,7 +18,7 @@ const Hero = ({getData}) => {
             {
              
              weGet.map(card=><Card card={card}></Card>)
-
+            
 
             }
                   
@@ -27,12 +30,7 @@ const Hero = ({getData}) => {
             
 
         <div>
-
-           <div className='p-10 shadow'>
-            <h2 className='font-bold text-black'>Task Status</h2>
-            <p>Select a ticket to add to Task Status</p>
-           </div>
-
+            <Selectarea></Selectarea>
 
            <div className='p-10 shadow mt-6'>
             <h2 className='font-bold text-black'>Resolved Task</h2>

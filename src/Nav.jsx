@@ -26,7 +26,7 @@ const Nav = () => {
     <img className='h-[30px] w-[90px] ml-[-10px] lg:ml-[10px] lg:h-[50px] lg:w-[100px]' src='/ticlogo.png'></img>
     <a className="btn btn-ghost text-[13px] font-extrabold ml-[-15px] lg:text-[20px text-black">CS-Ticket System</a>
   </div>
-  <div className="navbar-center hidden lg:flex text-black">
+  <div className="navbar-center hidden lg:flex text-black bg-white">
     <ul className="menu menu-horizontal px-1 ">
       <li><a>Home</a></li>
       <li>
