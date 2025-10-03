@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Banner = () => {
+const Banner = ({count, setCount, counter}) => {
     return (
         <div className='flex flex-col lg:flex-row gap-5 justify-center mt-10 lg:mt-20'>
 
@@ -13,7 +13,7 @@ const Banner = () => {
             <div className="absolute bg-[url('/vector1.png')] scale-x-[-1] bg-cover size-50 bg-center inset-y-0 right-0 "></div>
 
                 <h4 className='text-white'>In Progress</h4>
-              <h3 className='text-5xl text-white'>0</h3>
+              <h3 className='text-5xl text-white'>{count}</h3>
             </div>
 
 
@@ -24,7 +24,7 @@ const Banner = () => {
             <div className="absolute bg-[url('/vector1.png')] scale-x-[-1] bg-cover size-50 bg-center inset-y-0 right-0"></div>
 
                 <h4 className='text-white'>Resolved</h4>
-              <h3 className='text-5xl text-white'>0</h3>
+              <h3 className='text-5xl text-white'>{counter}</h3>
             </div>
 
 
