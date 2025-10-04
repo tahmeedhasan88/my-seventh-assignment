@@ -1,5 +1,5 @@
 import React, { use, useState } from 'react';
-
+import { toast } from "react-toastify";
 
 const Hero = ({getData, count, setCount, counter, setCounter}) => {
  
@@ -16,7 +16,7 @@ const Hero = ({getData, count, setCount, counter, setCounter}) => {
         const allCount = count+1;
         setCount(allCount)
 
-        alert("You added a task")
+    toast.success("you") 
     }
 
     const handleClear=(card)=>{
@@ -33,7 +33,7 @@ const Hero = ({getData, count, setCount, counter, setCounter}) => {
         const plusCount = counter + 1
         setCounter(plusCount)
 
-        alert("Task completed")
+        toast.success("you")
     }
 
 

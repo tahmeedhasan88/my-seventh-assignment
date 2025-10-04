@@ -6,6 +6,8 @@ import Hero from './Hero'
 import Nav from './Nav'
 import Footer from './Footer'
 import { useState } from 'react'
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
  
@@ -22,7 +24,7 @@ function App() {
         <Hero getData={getData} count={count} setCount={setCount} counter={counter} setCounter={setCounter}></Hero>
       </Suspense>
       <Footer></Footer>
-      
+       <ToastContainer position="bottom-right" autoClose={2000} />
     </>
   )
 }
