@@ -20,22 +20,25 @@ const Hero = ({getData, count, setCount, counter, setCounter}) => {
     toast.success(card.title) 
     }
 
-    const handleClear=(card)=>{
-        setSelect((view)=> {
-            const solveCard= view[card];
 
-            setSolve((complete)=> [...complete, solveCard]);
-            return view.filter((_, i) => i !==card);
-        });
+const handleClear=(card)=>{
+    const cardBox= select[card];
+    if(!cardBox) return;
 
-        const minCount= count-1;
+    setSelect(view=>view.filter((_, i) => i !==card));
+
+    setSolve(view=>[...view, cardBox])
+
+
+     const minCount= count-1;
         setCount(minCount)
 
         const plusCount = counter + 1
         setCounter(plusCount)
 
         toast.success("Your Task is Completed")
-    }
+
+}
 
 
     return (
@@ -101,12 +104,6 @@ const Hero = ({getData, count, setCount, counter, setCounter}) => {
 
             }
 
-        
-           
-
-
-
-            
            </div>
 
 
@@ -117,21 +114,12 @@ const Hero = ({getData, count, setCount, counter, setCounter}) => {
 
             {
                 solve.length>0 ? (
-                     solve.map((title)=>(<div className='font-semibold bg-[#E0E7FF] py-[10px] px-[20px] text-[17px] rounded-[5px] text-black mt-4 shadow-xl'><h3 className='text-start'>{title.title}</h3>
+                     solve.map((title, i)=>(<div key={i} className='font-semibold bg-[#E0E7FF] py-[10px] px-[20px] text-[17px] rounded-[5px] text-black mt-4 shadow-xl'><h3 className='text-start'>{title.title}</h3>
                     <div className='flex items-center gap-2 text-green-600'> <p className='text-[12px] text-start text-green-600'>Completed</p><Check></Check></div> </div>)) 
                 ) : ( <p>No resolved tasks yet.</p>)
             }
               
-             
-
-
-
-
-
-
-
-
-             
+            
 
            </div>
                

@@ -1,0 +1,23 @@
+1. What is JSX, and why is it used?
+= 
+JSX is the syntax that looks like HTML but it is not HTML it used in react to write UI inside JS. It makes code easier to read and write for programmers or developers.
+
+2. What is the difference between State and Props?
+=
+State is the data that which belongs to a component and can change. On other hand props is that data which passed from parent to child, cannot be changed by the child.
+
+
+3. What is the useState hook, and how does it work?
+=
+useState() is lets you add state to a function component. It gives you a value and a function to update that value.
+
+
+4. How can you share state between components in React?
+=
+ I will put the state in a parent component and i will pass it down to children using props.
+
+5. How is event handling done in React?
+=
+Events are handled with camelCase like: onClick we can pass a function to them.
+It is common as like as variable
+
