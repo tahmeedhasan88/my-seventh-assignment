@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Banner = ({count, setCount, counter}) => {
+const Banner = ({count, counter}) => {
     return (
         <div className='flex flex-col lg:flex-row gap-5 justify-center mt-10 lg:mt-20'>
 

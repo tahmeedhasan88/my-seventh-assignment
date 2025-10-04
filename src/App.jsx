@@ -24,7 +24,7 @@ function App() {
         <Hero getData={getData} count={count} setCount={setCount} counter={counter} setCounter={setCounter}></Hero>
       </Suspense>
       <Footer></Footer>
-       <ToastContainer position="bottom-right" autoClose={2000} />
+       <ToastContainer position="top-right" autoClose={2000} />
     </>
   )
 }

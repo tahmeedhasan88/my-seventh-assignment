@@ -1,3 +1,4 @@
+import { CalendarDays, Check } from 'lucide-react';
 import React, { use, useState } from 'react';
 import { toast } from "react-toastify";
 
@@ -16,7 +17,7 @@ const Hero = ({getData, count, setCount, counter, setCounter}) => {
         const allCount = count+1;
         setCount(allCount)
 
-    toast.success("you") 
+    toast.success(card.title) 
     }
 
     const handleClear=(card)=>{
@@ -33,7 +34,7 @@ const Hero = ({getData, count, setCount, counter, setCounter}) => {
         const plusCount = counter + 1
         setCounter(plusCount)
 
-        toast.success("you")
+        toast.success("Your Task is Completed")
     }
 
 
@@ -50,7 +51,7 @@ const Hero = ({getData, count, setCount, counter, setCounter}) => {
              weGet.map(card=>(
             
 
-                <div onClick={()=>handleSelect(card)} className='p-5 rounded-xl shadow-xl'>
+                <div onClick={()=>handleSelect(card)} className='p-5 rounded-[10px] shadow-xl bg-white'>
                    <div className='flex items-center justify-between lg:px-6'>
                     <h3 className='text-xl font-bold text-black'>{card.title}</h3>
                     <div className={`px-3 rounded-2xl ${card.status === "Open" ? "text-green-800 bg-green-200 " : ""}
@@ -67,7 +68,7 @@ const Hero = ({getData, count, setCount, counter, setCounter}) => {
 
                         <div className='flex gap-5'>
                             <p className='font-semibold text-black'>{card.customer}</p>
-                            <p className='text-black'>{card.createdAt}</p>
+                            <div className='flex item-center gap-1'><CalendarDays className='size-5 text-black'></CalendarDays> <p className='text-black'>{card.createdAt}</p></div>
                         </div>
                     </div>
                   </div>
@@ -88,12 +89,12 @@ const Hero = ({getData, count, setCount, counter, setCounter}) => {
 
     
             
-           <div className='p-10 shadow'>
+           <div className='p-10 shadow bg-white rounded-[5px]'>
             <h2 className='font-bold text-black'>Task Status</h2>
 
             {
               
-              select.length>0? (select.map((card, index)=>(<div className='border p-5 rounded-xl mt-4'>
+              select.length>0? (select.map((card, index)=>(<div className='shadow-xl bg-[#f5f6fa] p-5 rounded-xl mt-4'>
             <h3 className='text-black font-bold text-[20px]'>{card.title}</h3>
             <button onClick={()=>handleClear(index)} className='py-[7px] px-[70px] bg-green-600 mt-2 text-white font-semibold rounded-[5px]'>Completed</button>
            </div>))): (<p>Select a ticket to add to Task Status</p>)
@@ -110,15 +111,14 @@ const Hero = ({getData, count, setCount, counter, setCounter}) => {
 
 
 
-           <div className='p-10 shadow mt-6'>
-            <h2 className='font-bold text-black'>Resolved Task</h2>
+           <div className='p-10 shadow mt-6 bg-white rounded-[5px]'>
+            <h2 className='font-bold text-black '>Resolved Task</h2>
            
-
-               {/* ---resolved---- */}
 
             {
                 solve.length>0 ? (
-                     solve.map((title)=>(<div className='font-semibold bg-[#E0E7FF] py-[10px] px-[20px] text-[17px] rounded-[5px] text-black mt-4'><h3>{title.title}</h3></div>)) 
+                     solve.map((title)=>(<div className='font-semibold bg-[#E0E7FF] py-[10px] px-[20px] text-[17px] rounded-[5px] text-black mt-4 shadow-xl'><h3 className='text-start'>{title.title}</h3>
+                    <div className='flex items-center gap-2 text-green-600'> <p className='text-[12px] text-start text-green-600'>Completed</p><Check></Check></div> </div>)) 
                 ) : ( <p>No resolved tasks yet.</p>)
             }
               
